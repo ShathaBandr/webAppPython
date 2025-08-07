@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}إنشاء حساب{% endblock %}
+
+{% block content %}
+<div class="signup-wrapper">
+    <form method="POST">
+        <h3>إنشاء حساب جديد</h3>
+        <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" />
+        </div>
+        <div class="form-group">
+            <label for="firstName">اسمك الأول</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="أدخل اسمك الأول" />
+        </div>
+        <div class="form-group">
+            <label for="password1">كلمة السر</label>
+            <input type="password" class="form-control" id="password1" name="password1" placeholder="أدخل كلمة السر" />
+        </div>
+        <div class="form-group">
+            <label for="password2">(للتحقق) كلمة السر</label>
+            <input type="password" class="form-control" id="password2" name="password2"
+                placeholder="أدخل كلمة السر للتحقق" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">إرسال</button>
+    </form>
+</div>
+{% endblock %}

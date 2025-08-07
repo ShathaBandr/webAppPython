@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}تسجيل الدخول{% endblock %} {% block
+content %}
+<div class="login-wrapper">
+  <form method="POST">
+    <h3>تسجيل الدخول</h3>
+    <div class="form-group">
+      <label for="email">البريد الإلكتروني</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="أدخل بريدك الإلكتروني"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">كلمة السر</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="أدخل كلمة السر"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+  </form>
+</div>
+{% endblock %}
