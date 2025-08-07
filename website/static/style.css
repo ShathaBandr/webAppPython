@@ -84,7 +84,7 @@ body {
 
 .list-group-item .close {
     position: absolute;
-    right: 15px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
@@ -225,4 +225,5 @@ footer hr {
     margin-top: 40px;
     border-top: 1px solid #ccc;
 }
+
 
